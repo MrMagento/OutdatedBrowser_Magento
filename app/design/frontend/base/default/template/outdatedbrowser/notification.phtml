@@ -1,0 +1,19 @@
+<div id="outdated">
+    <h6><?php echo $this->__('Your browser is out-of-date!'); ?></h6>
+    <p>
+      <?php echo $this->__('Update your browser to view this website correctly.'); ?>
+      <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/"><?php echo $this->__('Update my browser now'); ?></a>
+    </p>
+     <p class="last"><a href="javascript:" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+
+<script>
+Event.observe(window, "load", function(){
+    outdatedBrowser({
+        bgColor: '<?php echo $this->getBackground() ?>',
+        color: '<?php echo $this->getColor() ?>',
+        lowerThan: '<?php echo $this->getVersion() ?>',
+        languagePath: ''
+    });
+});
+</script>

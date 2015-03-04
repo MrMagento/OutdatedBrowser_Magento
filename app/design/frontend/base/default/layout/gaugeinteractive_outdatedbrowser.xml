@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/lib/outdatedbrowser.min.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/lib/outdatedbrowser.min.css</name>
+            </action>
+        </reference>
+        <reference name="before_body_end">
+            <block type="outdatedbrowser/notification" name="outdatedbrowser_notification" as="outdatedbrowser_notification" template="outdatedbrowser/notification.phtml" />
+        </reference>
+    </default>
+</layout>
