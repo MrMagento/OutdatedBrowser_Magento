@@ -13,7 +13,7 @@ class GaugeInteractive_OutdatedBrowser_Helper_Data extends Mage_Core_Helper_Abst
     const XML_PATH_ACTIVE        = 'notifications/outdatedbrowser/active';
     const XML_PATH_COLOR         = 'notifications/outdatedbrowser/color';
     const XML_PATH_BACKGROUND    = 'notifications/outdatedbrowser/background';
-    const XML_PATH_LESSTHAN      = 'notifications/outdatedbrowser/lowerthan';
+    const XML_PATH_LOWERTHAN     = 'notifications/outdatedbrowser/lowerthan';
 
     /**
      * Whether Outdated Browser is active
@@ -56,7 +56,7 @@ class GaugeInteractive_OutdatedBrowser_Helper_Data extends Mage_Core_Helper_Abst
      */
     public function getVersion($store = null)
     {
-        return Mage::getStoreConfig(self::XML_PATH_LESSTHAN, $store);
+        return Mage::getStoreConfig(self::XML_PATH_LOWERTHAN, $store);
     }
 
 }
