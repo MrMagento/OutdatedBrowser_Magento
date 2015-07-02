@@ -13,7 +13,7 @@ class GaugeInteractive_OutdatedBrowser_Helper_Data extends Mage_Core_Helper_Abst
     const XML_PATH_ACTIVE        = 'notifications/outdatedbrowser/active';
     const XML_PATH_COLOR         = 'notifications/outdatedbrowser/color';
     const XML_PATH_BACKGROUND    = 'notifications/outdatedbrowser/background';
-    const XML_PATH_LESSTHAN      = 'notifications/outdatedbrowser/lessthan';
+    const XML_PATH_LESSTHAN      = 'notifications/outdatedbrowser/lowerthan';
 
     /**
      * Whether Outdated Browser is active
